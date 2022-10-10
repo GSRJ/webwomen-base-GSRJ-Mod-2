@@ -1,0 +1,158 @@
+/* Desenvolva sua estilização aqui... */
+header {
+    background-image: url(../assets/img/background.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100vw;
+}
+
+.brandInformation {
+  position: static;
+  background-color: var(--color-grey-1-opacity);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: baseline;
+  gap: 2rem;
+  padding: 5rem 1rem 5rem 1rem;
+  color: var(--color-grey-3);
+}
+.brandInformation > img {
+  width: 60%;
+}
+.brandInformation > button {
+    margin-top: 15%;
+  }
+.slogan {
+  font-size: var(--title-3);
+  font-weight: 600;
+  line-height: 3rem;
+}
+.description {
+  font-weight: 400;
+  line-height: 2rem;
+}
+.call {
+  font-weight: 600;
+  font-size: var(--title-5);
+}
+
+main, aside{
+    background-color: var(--color-grey-5);
+    padding: 1rem;
+}
+
+main > h1{
+    padding-top: 2rem ;
+    padding-bottom: 2rem ;
+    font-weight: 600;
+    font-size: var(--title-4);
+}
+
+.jobCard{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: var(--color-grey-6);
+    border-radius: var(--radius-default);
+    margin-bottom: 1rem;
+}
+.jobCard>span,.jobCard>div{
+    display: flex;
+    gap: 1.5rem;
+
+}
+.jobCardDescription{
+    width: 80%;
+}
+
+
+aside > div{
+    margin-top: 6rem;
+    background-color: var(--color-grey-6);
+    border-radius: var(--radius-default);
+}
+
+aside > div > h1{
+padding: 1.5rem;
+font-weight: 600;
+font-size: var(--title-4);
+
+}
+
+#selectedJobs>li{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--color-grey-1-opacity);
+}
+
+.selectedJobTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectedJobEnterpriseLocation{
+    display: flex;
+    gap:1.5rem;
+
+}
+
+
+
+
+@media (min-width: 991px) {
+  :root {
+    --title-1: calc(3rem / 1.2);
+    --title-2: calc(2.5rem / 1.2);
+    --title-3: calc(2rem / 1.2);
+    --text-1: calc(1.125rem / 1.2);
+  }
+  body {
+    margin: 0 auto;
+    width: 1200px;
+    background-size: 1200px;
+  }
+  header {
+    position: static;
+    width: 100%;
+    height: 90vh;
+    height: fit-content;
+  }
+  .brandInformation {
+    width: 1200px;
+    height: 551px;
+    padding: 5rem;
+  }
+  .brandInformation > img {
+    width: auto;
+  }
+  .brandInformation > button {
+    margin-top: auto;
+  }
+  .slogan {
+    font-size: var(--title-1);
+  }
+  .description{
+    width: 70%;
+    font-size: var(--text-3);
+  }
+
+  .mainBox{
+    display: grid;
+    grid: 100% / 2fr 1.5fr;
+
+  }
+
+  .selectedJobTitle{
+    font-size: var(--text-3);
+}
+
+  }

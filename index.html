@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/homePage.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Webwomen</title>
+    <meta
+      name="description"
+      content="Está procurando oportunidades de estágio, emprego ou bolsas de estudo? 
+      Ou até mesmo oportunidades para atender eventos de tecnologia no Brasil 
+      e ao redor do mundo?"
+    />
+  </head>
+  <body class="container">
+    <header>
+      <div class="brandInformation">
+        <img src="./assets/img/logo.svg" alt="logo Webwomen" />
+        <p class="slogan">Lugar de mulher é onde ela quiser!</p>
+        <p class="description">
+          Está procurando oportunidades de estágio, emprego ou bolsas de estudo?
+          <br />
+          Ou até mesmo oportunidades para atender eventos de tecnologia no
+          Brasil e ao redor do mundo?
+        </p>
+        <p class="call">Confere aqui embaixo o que temos pra você!</p>
+        <button class="purpleButton"> <a href="#jobsContainer">Ir para seção das vagas</a></button>
+      </div>
+    </header>
+    <div class="mainBox">
+      <main>
+        <h1>Vagas</h1>
+        <ul id="jobsContainer">
+          <!-- <li class="jobCard">
+            <h2>Pessoa desenvolvedora front-end - React JS</h2>
+            <span>
+              <p>Kenzie Academy</p>
+              <p>Curitiba</p>
+            </span>
+            <p class="jobCardDescription">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+            <div>
+              <button class="greyButton">Home Office</button>
+            </div>
+            <button class="purpleButton">Candidatar</button>
+          </li> -->
+        </ul>
+      </main>
+      <aside>
+        <div>
+          <h1>Vagas Selecionadas</h1>
+          <ul id="selectedJobs">
+            <li>
+              <span class="selectedJobTitle">
+                <h2>Pessoa desenvolvedora front-end - React JS</h2>
+                <button class="trashButton">
+                  <img src="./assets/trashButton.svg" alt="botão de excluir" />
+                </button>
+              </span>
+              <span class="selectedJobEnterpriseLocation">
+                <p>Kenzie Academy</p>
+                <p>Curitiba</p>
+              </span>
+            </li>
+            <li>
+              <span class="selectedJobTitle">
+                <h2>Pessoa desenvolvedora front-end - React JS</h2>
+                <button class="trashButton">
+                  <img src="./assets/trashButton.svg" alt="botão de excluir" />
+                </button>
+              </span>
+              <span class="selectedJobEnterpriseLocation">
+                <p>Kenzie Academy</p>
+                <p>Curitiba</p>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+    <script src="./scripts/jobsData.js"></script>
+    <script src="./scripts/homePage.js"></script>
+  </body>
+</html>
